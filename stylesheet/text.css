@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family: 'Lobster_Two';
+    src: url('../Lobster_Two/LobsterTwo-Bold.ttf');
+}
+
+:root {
+	--text-shadow-color: #ade8f4;
+	--text-color: #03045e;
+    --text-stroke: white;
+
+    /* --text-stroke: rgb(14, 11, 11);
+    --text-shadow-color: #fafafa;
+	--text-color: #3f8afc; */
+
+}
+
+html {
+    font-size: 14px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lobster_Two';
+	font-weight: 900;
+}
+
+body {
+	height: 100vh;
+	display:flex;
+	flex-wrap: wrap;
+    align-items: center;
+	overflow: hidden;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	/* background: pink; */
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+    flex-grow: 1;
+    /* visibility: hidden; */
+
+}
+
+.container > section {
+	text-align: center;
+	font-weight: 900;
+    /* background-color: orange; */
+    transform: translateY(-55%);
+}
+
+.container > section span {
+    font-size: calc(38px + (100 - 26) * ((100vw - 250px) / (1600 - 250)));
+    /* font-size: 8.5vw !important; */
+	display: inline-block;
+	will-change: transform;	 
+    padding: .1em;
+    -webkit-text-stroke: 2px var(--text-stroke);
+	color: var(--text-color);
+	text-shadow: 
+	    -0.07rem 0.07rem 0rem var(--text-shadow-color),
+	    -0.14rem 0.14rem 0rem var(--text-shadow-color),
+	    -0.21rem 0.21rem 0rem var(--text-shadow-color),
+	    -0.28rem 0.28rem 0rem var(--text-shadow-color),
+	    -0.35rem 0.35rem 0rem var(--text-shadow-color),
+	    -0.42rem 0.42rem 0rem var(--text-shadow-color),
+	    -0.50rem 0.50rem 0rem var(--text-shadow-color),
+        -0.57rem 0.57rem 0rem var(--text-shadow-color),
+        -0.64rem 0.64rem 0rem var(--text-shadow-color),
+        -0.71rem 0.71rem 0rem var(--text-color) ;
+}
+
+#canvas {
+    position: fixed;
+    /* top: 0%;
+    left: 0%;
+    bottom: 0%;
+    height: 100%; */
+    background-color: transparent;
+    /* border: 3px solid black; */
+    /* visibility: hidden; */
+    z-index: -1;
+}
+
+
+
+
+/* @media (min-width: 900px) {
+    .container > section span {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1050px) {
+    .container > section span {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .container > section span {
+        font-size: 8.5rem;
+    }
+} */
+
+
+
+
